@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link  rel="stylesheet" type = "text/css" href = "css/bootstrap.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <meta charset="utf-8">
+    <title>La Repubblica</title>
+
+</header>
+
+
+<body>
+
+
+<div class = "container-fluid bg-white pt-2 border-black border-bottom pb-1  fixed-top">
+    <div class = "row">
+        <div class = "col-sm-2"></div>
+        <div class = "col-sm-2">
+            <div class="btn-group text-start pb-1 ">
+                <button type="button" class="btn btn-sm fw-semibold border-end"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list mb-1" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                </svg>MENU</button>
+
+
+                <button type="button" class="btn btn-sm fw-semibold "><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search mb-1" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                </svg>
+                    CERCA</button>
+            </div>
+        </div>
+        <div class = "col-sm-4 text-center">
+            <button type="button" class="btn btn-sm fw-semibold">ABBONATI</button>
+        </div>
+        <div class = "col-sm-2 text-end">
+            <div class="btn-group btn-group-sm">
+                <button type="button" class="btn btn-sm fw-semibold border-end ">GEDI SMILE</button>
+                <button type="button" class="btn btn-sm fw-semibold border-start border-end">R</button>
+                <button type="button" class="btn btn-sm fw-semibold border-start ">ACCEDI <svg  xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person ms-1 mb-1" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                </svg></button>
+            </div>
+        </div>
+        <div class = "col-sm-2"></div>
+    </div>
+</div>
+
+<div class = "container-fluid bg-dark" >
+    <div class = "row">
+        <div class = "col-sm-2 text-center bg-dark ">
+
+        </div>
+
+        <div class = "col-sm-8 text-start bg-dark mt-2 mb-2 pt-5"  >
+
+            <img src="Items/Pubblciità iniziale.webp" height="130" width="200"/>
+            <button type="button" href="#"  class="btn btn-lg fw-semibold text-bg-dark ">Metropolis - Nuovo di pasqua, con Majorino, Serra, Valentini</button>
+        </div>
+        <div class = "col-sm-2 bg-dark"></div>
+    </div>
+</div>
+
+
+<div class = "container-fluid" >
+    <div class = "row">
+        <div class = "col-sm-2  text-center bg-white mh-100 mw-100 ps-0 d-none d-lg-block" >
+            <img class = "sticky-top " src="Items/Pubblciità sfondo.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+        </div>
+
+
+        <div class = "col-lg-8 p-0" >
+            <div class = "fw-bold display-1 text-center mt-1 mb-1"  style="font-family: 'Bodoni 72'" > la Repubblica </div>
+            <div class = "text-center fw-semibold mb-1 mt-1"  style="font-family: 'Bodoni 72'" >
+                <div>12 Aprile 2023 - Aggiornato alle <time datetime = "2023-04--12T14:11:13">14.25</time>
+
+
+                    <img src="Items/Sole meteo.png" height="25" width="25"/>
+                    18°
+
+                    <input id="search-input" type="search" id="form1" class="small" />
+                    <button id="search-button" type="button" class="btn btn-sm btn-white" >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                        </svg>
+                        <i class="fas fa-search"></i></button>
+                </div>
+            </div>
+            <div class ="border border-black  text-center fw-semibold mt-4 border-black ">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-md fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Sezioni</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciao</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-md fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Edizioni Locali</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciao</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-md fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Il Quotidiano</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciao</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-md fw-semibold dropdown-toggle" data-bs-toggle="dropdown">Servizi</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciao</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-md fw-semibold dropdown-toggle" data-bs-toggle="dropdown">A-Z</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ciao</a></li>
+                        <li><a class="dropdown-item" href="#">Smartphone</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class = " border border-black border-top-0  bg-info text-center">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm ">Borse</button>
+                    <button type="button" class="btn btn-sm ">Meteo</button>
+                    <button type="button" class="btn btn-sm ">Berlusconi</button>
+                    <button type="button" class="btn btn-sm ">Terzo Polo</button>
+                    <button type="button" class="btn btn-sm ">Tennis Montecarlo</button>
+                    <button type="button" class="btn btn-sm ">Superbonus</button>
+                    <button type="button" class="btn btn-sm ">Ucraina</button>
+                    <button type="button" class="btn btn-sm ">Petizione per l'ambiente</button>
+
+
+                </div>
+            </div>
+
+            <div class = "border border-black border-top-0 border-bottom-0 pb-2 pt-4">
+
+                <img src="Items/Pubblicità la repubblica.webp" height="300" width="958"/>
+            </div>
+
+
+            <div class = "container-fluid border border-black border-top">
+                <div class = "row">
+                    <div class = "col-sm-8 position-static">
+                        <div class = "text-center fw-semibold  pt-2 pb-2">
+                            Il caso
+                        </div>
+                        <div class=" ps-2 pe-2 pt-1">
+                            <img src="Items/Orso articolo.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+                        </div>
+                        <div class = "fw-semibold text-center text-primary pt-2 small">TRENTINO </div>
+                        <h2 class = "text-center"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark"  style = "font-family : 'Times New Roman'">L'orsa JJ4 è stata catturata. Aveva ucciso il runner Andrea Papi. Rallentata dalla neve e da tre cuccioli al seguito | Video Il luogo dov'è rinchiusa</a>
+                        </h2>
+                        <div class = "text-center small fst-italic pb-3" style = "font-family:'Helevetica Neue'">di Giampaolo Visetti</div>
+
+                        <div class = "container-fluid border-black border-top border-bottom">
+                            <div class = "row">
+                                    <div class = "text-center fw-semibold pt-2">
+                                        Il lutto
+                                    </div>
+                                <div class = "col-sm-9">
+                                    <div class = "text-start fw-semibold text-primary small pt-1">L'ANNUNCIO</div>
+                                    <h3 class = "text-start"  >
+                                        <a href="#" class = "fw-semibold link-underline-light text-dark"  style = "font-family : 'Times New Roman'">Morto Arrigo Vecchioni, figlio di Roberto:"Dopo tanto dolore è finalmente in pace"</a>
+                                    </h3>
+                                </div>
+
+                                <div class = "col-sm-3 text-start pt-2 ">
+                                    <img src="Items/Foto annuncio.webp" class = "img-fluid " style="max-width:100%;max-height:100%;"/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "container-fluid pt-2 border-black border-bottom">
+                            <div class = "row">
+                                <div class = "text-center fw-semibold pb-2">Stati Uniti</div>
+                                <div class = "col-sm-6">
+                                    <img src="Items/Stati Uniti 1.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+                                    <div class = "text-start fw-semibold text-primary small pt-2">STATO DI NEW YORK</div>
+                                    <h5 class = "text-start"  >
+                                        <a href="#" class = "fw-semibold link-underline-light text-dark" >Ragazza entra con l'auto nel vialetto sbagliato: il padrone di casa fa fuoco e la uccide</a>
+                                    </h5>
+                                </div>
+                                <div class = "col-sm-6">
+                                    <img src="Items/Stati Uniti 2.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+                                    <div class = "text-start fw-semibold text-primary small pt-2">MISSOURI</div>
+                                    <h5 class = "text-start"  >
+                                        <a href="#" class = "fw-semibold link-underline-light text-dark" >Suona alla porta sbagliata  il proprietario gli spara alla testa. Il procuratore: "C'è una componente razziale"</a>
+                                    </h5>
+                                    <div class = "text-start small fst-italic pb-3 pt-0" style = "font-family:'Helevetica Neue'">di Massimo Basile</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class = "container-fluid pt-2">
+                            <div class = "row">
+                                <div class = "text-center fw-semibold "> Sanità </div>
+                             <div class = "container-fluid">
+                                 <div class = "row">
+                                     <div class = "col-sm-6 pt-2">
+                                         <img src="Items/Sanità.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+                                     </div>
+                                     <div class = "col-sm-6">
+                                         <div class = "fw-semibold text-start text-primary small">IL CASO</div>
+                                         <h3 class = "text-start"  >
+                                             <a href="#" class = "fw-semibold link-underline-light text-dark" style = "font-family:'Helevetica Neue'" >Salute, quei 165 milioni per tagliare liste d'attesa che le Regioni non hanno speso. Ecco le amministrazioni che sono andate peggio </a>
+                                         </h3>
+                                     </div>
+                                 </div>
+                             </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class = "col-sm-4 d-none d-md-block bg-opacity-10 bg-secondary position-static">
+                        <div class = "text-center fw-semibold pt-2 "> Il Video</div>
+                        <div class = "text-center text-primary fw-semibold small pt-2">SALUTE </div>
+                        <h5 class = "text-center pb-0" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark" >Vuoti di memoria, dal sonno perso al Long Covid: l'esperto ci spiega perchè non ricordiamo</a>
+                        </h5>
+                        <div class = "text-center fst-italic pb-3 pt-0 border-black border-bottom " style = "font-family : 'Times New Roman'">di Cinzia Lucchelli</div>
+
+                        <div class = "text-center pt-3">
+                            <img src="Items/La giornata .webp"  class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+                        </div>
+                        <div class = "text-center text-primary fw-semibold small pt-2">PODCAST - LA GIORNATA</div>
+                        <h5 class = "text-center pb-0 pt-1" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark" >Cutro chiama Dublino</a>
+                        </h5>
+                        <div class = "text-center fst-italic pb-3 pt-0 border-warning border-bottom " style = "font-family : 'Times New Roman'">di Laura Pertici</div>
+
+                        <h5 class = "text-center pt-2 bordre border-warning border-top text-warning fw-semibold" style = "font-family : 'Times New Roman'">Editoriale & Commenti</h5>
+
+                        <a class = "text-start text-black fw-semibold  pb-1" href="#" style = "font-family : 'Times New Roman'">Il commento</a>
+                        <div class = "text-start text-warning small pt-1 broder-black border-top">di Francesco Bei</div>
+                        <h5 class = "text-start  pt-2 pb-4" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark " >La sostituzione etnica e il peso delle parole</a>
+                        </h5>
+
+                        <a class = "text-start text-black fw-semibold  pb-1 " href="#" style = "font-family : 'Times New Roman'">La guerra</a>
+                        <div class = "text-start text-warning small pt-1 broder-black border-top">di Richard Haass, Charles A. Kupchan</div>
+                        <h5 class = "text-start  pt-2 pb-4" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark " >È ora di cambiare la strategia sull’Ucraina</a>
+                        </h5>
+
+                        <a class = "text-start text-black fw-semibold  pb-1 pt-2" href="#" style = "font-family : 'Times New Roman'">Le nomine</a>
+                        <div class = "text-start text-warning small pt-1 broder-black border-top">di Luigi Zanda</div>
+                        <h5 class = "text-start pb-4 pt-2" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark " >La lezione dell'Iri e il confronto con il passato</a>
+                        </h5>
+
+                        <a class = "text-start text-black fw-semibold  pb-1 pt-2" href="#" style = "font-family : 'Times New Roman'">Il commento</a>
+                        <div class = "text-start text-warning small pt-1 broder-black border-top">di Chiara Valerio</div>
+                        <h5 class = "text-start pb-4 pt-2" style = "font-family : 'Times New Roman'"  >
+                            <a href="#" class = "fw-semibold link-underline-light text-dark " >Dal premio all'intelligenza artificiale alla sostituzione etnica di Lollobrigida: cose generate da altre cose</a>
+                        </h5>
+
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class = "col-sm-2 text-center bg-white pe-0 ps-0 d-none d-lg-block">
+            <img  class = "sticky-top" src="Items/Pubblciità sfondo.webp" class = "img-fluid" style="max-width:100%;max-height:100%;"/>
+        </div>
+    </div>
+</div>
+
+
+</body>
+
